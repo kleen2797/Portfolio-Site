@@ -160,9 +160,9 @@ html {
 }
 
 .photo{
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
-  height:600px;
+  width: 400px;
+  height:auto;
 }
