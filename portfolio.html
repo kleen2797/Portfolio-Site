@@ -38,7 +38,7 @@
                     adjusting the value of Kp (proportional gain) for the system to minimise position overshoot and steady state error is a key  step to building a solid foundation
                     other controllers can be built around.  </p>
                 <img class="photo" src="assets/media/Kp1.jpg" alt="graph readout showing affects of changing motor parameter Kp on the closed loop step response">
-                <p class="caption"> Figure 5: System response graphs showing the effect of changing motor parameter Kp on the closed loop step response</p>
+                <p class="caption"> Figure 2: System response graphs showing the effect of changing motor parameter Kp on the closed loop step response</p>
                 <p class="description"> As can be seen in the graph comparisons above, adjusting the proportional gain Kp can have a large impact on the system's position overshoot 
                     steady state error.  Practically on the Ball and beam system, this looks like some pretty intense wobbling and overcorrection, in this case over a full second of Steady 
                     State wobble. Choosing proportional gain values proved to be tricky, as each value has pros and cons.  While the higher value of kp may produce a lower RMS error in the system,
@@ -49,7 +49,7 @@
                 <p class="description"> The iterative nature of this project involves some back and forth adjustments even if good choices are made.  The graphs below illustrate using a solid choice of 
                     proportional gain, Kp=0.4 from the earlier closed loop step response, after adding Feedforward and Pole Zero compensation to the system.  </p>
                 <img class="photo" src="assets/media/Kp2.jpg" alt="graph readout showing affects of changing motor parameter Kp on the system after adding FFW and PZ comp">
-                <p class="caption"> Figure 6: two graphs showing the effects of changing proportional gain in a system with multiple control loops </p>
+                <p class="caption"> Figure 3: two graphs showing the effects of changing proportional gain in a system with multiple control loops </p>
                 <p class="description"> The only system difference between the image on the left and the image on the right is the value of proportional gain Kp.  If the only data to reference were the 
                     closed loop response from earlier, the value on the right Kp = 0.4 could have seemed like a good choice.  However, the stability of the system is severley compromised as can bee seen by the 
                     large margin of position overshoot and overcompensation.  The left trial of Kp = 0.2 was not necessarily the best proportional gain trial from the closed loop step response tests, but when coupled
@@ -63,11 +63,11 @@
             
                 <p class="description">  Pole Zero cancellation reduces the postion overshoot without needing to lower feedback gains. </p>
                 <img class="photo" src="assets/media/PZbd.jpg" alt="block diagram showing the system including Pole-zero cancellation">
-                <p class="caption">Figure 7: Reference of partial control loop with Pole Zero Compensator in red. Parameter C is the ‘zero’ that is being moved in figure 6 above.</p>    
+                <p class="caption">Figure 4: Reference of partial control loop with Pole Zero Compensator in red. Parameter C is the ‘zero’ that is being moved in figure 6 above.</p>    
             
                 <p class="description"> Adding additional controls systems like Feedforward and Pole Zero Cancellation also require tuning. </p>
                 <img class="photo" src="assets/media/PZ2.jpg" alt="graph readout showing affects of moving the zero Pole-zero cancellation">
-                <p class="caption">Figure 6: Collection of system response graphs changing zero location parameter C as part of pole-zero compensation. </p>
+                <p class="caption">Figure 5: Collection of system response graphs changing zero location parameter C as part of pole-zero compensation. </p>
                 <p class="description"> The time it takes for the system to reach steady state is changed by shifting the zero location.  The fastest response time is desirable, but 
                     a lower value of overshoot is also necessary to avoid instbility. </p>
                     
