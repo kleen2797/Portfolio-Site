@@ -32,15 +32,19 @@
                     Pole-Zero compensation, Lead/Lag compensation, and a PID control loop.  </p>
                            
             
-            <h1 class="title">Artifact1</h1>
-                <p class="description"> dont know </p>
+            <h1 class="title">Tuning System Parameters</h1>
+                <p class="description"> Analyzing the system's closed loop step response allows for tuning motor characteristics before adding additional controls.
+                    adjusting the value of Kp (proportional gain) for the system to minimise position overshoot and steady state error is a key  step to building a solid foundation
+                    other controllers can be built around.  </p>
+                <img class="photo" src="assets/media/Kp1.jpg" alt="graph readout showing affects of changing motor parameter Kp on the closed loop step response">
+                <p class="caption"> Figure 5: System response graphs showing the effect of changing motor parameter Kp on the closed loop step response</p>
+                <p class="description"> As can be seen in the graph comparisons above, adjusting the proportional gain Kp can have a large impact on the system's position overshoot 
+                    steady state error.  Practically on the Ball and beam system, this looks like some pretty intense wobbling and overcorrection, in this case over a full second of Steady 
+                    State wobble. </p>
             
             <h1 class="title">Pole Zero Cancellation</h1>
             
-                <p class="description">  insert text here</p>
-                <img class="photo" src="assets/media/PZ1.jpg" alt="graph readout showing affects of Pole-zero cancellation">
-                <p class="caption"> Figure 5: System response graphs showing the effect of Pole Zero compensation on the system even with sub-optimal tuning parameters</p>
-            
+                
                 <p class="description">  insert text here</p>
                 <img class="photo" src="assets/media/PZ2.jpg" alt="graph readout showing affects of moving the zero Pole-zero cancellation" width="400" height="500">
                 <p class="caption">Figure 6: Collection of system response graphs changing zero location parameter C as part of pole-zero compensation. </p>
