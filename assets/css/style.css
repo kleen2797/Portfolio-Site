@@ -116,7 +116,7 @@ html {
 }
 
 .caption{
-    text-align: left;
+    text-align: caption;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 100px;
@@ -149,7 +149,7 @@ html {
 }
 
 .description{
-    text-align: center;
+    text-align: block;
     margin-top: 10px; 
     margin-bottom: 25px;
     line-height: 1.3;
