@@ -2,6 +2,14 @@
 
 html {
     background-color: rgb(100, 138, 108);
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+
+  body{
+    background-color: gainsboro;
+    padding-bottom:50px;
+    box-shadow: 5px 5px 5px black;
   }
 
   .navigation {
@@ -11,7 +19,7 @@ html {
   }
   
   .navigation a {
-    color: whitesmoke;
+    color: rgb(100, 138, 108);
     font-weight: bold;
     letter-spacing: 2px;
     text-decoration: none;
@@ -76,13 +84,13 @@ html {
 
 .contactme{
     text-align: center;
-    color:whitesmoke;
+    color:black;
     font-size: 3rem;
 }
 
 .title{
      text-align: left; 
-     color:whitesmoke;
+     color:black;
      font-family: "Monaco", "Courier New", monospace;
      margin-top: 25px;
      margin-bottom: 25px;
@@ -111,7 +119,7 @@ html {
 }
 
 .reslink{
-    color: whitesmoke;
+    color: green;
     font-weight: bold;
     letter-spacing: 2px;
     text-decoration: underline;
@@ -141,3 +149,10 @@ html {
     font-size: 1.5rem;
 }
 
+.photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height:400px;
+}
