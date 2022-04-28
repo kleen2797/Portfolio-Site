@@ -157,8 +157,8 @@ html {
 
 .photo{
   display: block;
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: auto;
-  width: 6000px;
+  width: 600px;
   height:auto;
 }
