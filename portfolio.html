@@ -40,21 +40,33 @@
                 <p class="caption"> Figure 5: System response graphs showing the effect of changing motor parameter Kp on the closed loop step response</p>
                 <p class="description"> As can be seen in the graph comparisons above, adjusting the proportional gain Kp can have a large impact on the system's position overshoot 
                     steady state error.  Practically on the Ball and beam system, this looks like some pretty intense wobbling and overcorrection, in this case over a full second of Steady 
-                    State wobble. </p>
+                    State wobble. Choosing proportional gain values proved to be tricky, as each value has pros and cons.  While the higher value of kp may produce a lower RMS error in the system,
+                    when Feedforward and Pole Zero cancellation were added to the system it lost stability and resulted in a large amount of ringing. A key takeaway was to run many trials with each
+                    parameter configuration to be able to reference as you progress.  Unorganized or unsaved data is not usable, and with a large number of datapoints to keep track of, ensures a 
+                    re-do</p>
             
             <h1 class="title">Pole Zero Cancellation</h1>
             
-                
                 <p class="description">  insert text here</p>
-                <img class="photo" src="assets/media/PZ2.jpg" alt="graph readout showing affects of moving the zero Pole-zero cancellation" width="400" height="500">
-                <p class="caption">Figure 6: Collection of system response graphs changing zero location parameter C as part of pole-zero compensation. </p>
-          
+                <img class="photo" src="assets/media/PZbd.jpg" alt="block diagram showing the system including Pole-zero cancellation">
+                <p class="caption">Figure 7: Reference of partial control loop with Pole Zero Compensator in red. Parameter C is the ‘zero’ that is being moved in figure 6 above.</p>    
             
+                <p class="description"> Adding additional controls systems like Feedforward and Pole Zero Cancellation also require tuning. </p>
+                <img class="photo" src="assets/media/PZ2.jpg" alt="graph readout showing affects of moving the zero Pole-zero cancellation">
+                <p class="caption">Figure 6: Collection of system response graphs changing zero location parameter C as part of pole-zero compensation. </p>
+                <p class="description"> not sure yet ... ?</p>
+                    
+        
+        <h1 class="title">Conclusion</h1>
                 <p class="description">  insert text here</p>
-                <img class="photo" src="assets/media/PZbd.jpg" alt="block diagram showing the system including Pole-zero cancellation" width="400" height="200">
-                <p class="caption">Figure 7: Reference of partial control loop with Pole Zero Compensator in red. Parameter C is the ‘zero’ that is being moved in figure 6 above.</p>
+            
+        
         </div>
 
+        
+        
+        
+        
         <div id="project">
             <h3 class="title">Communications RX/TX </h3>
 
