@@ -44,11 +44,23 @@
                     State wobble. Choosing proportional gain values proved to be tricky, as each value has pros and cons.  While the higher value of kp may produce a lower RMS error in the system,
                     when Feedforward and Pole Zero cancellation were added to the system it lost stability and resulted in a large amount of ringing. A key takeaway was to run many trials with each
                     parameter configuration to be able to reference as you progress.  Unorganized or unsaved data is not usable, and with a large number of datapoints to keep track of, ensures a 
-                    re-do</p>
+                    re-do.</p>
+            
+                <p class="description"> The iterative nature of this project involves some back and forth adjustments even if good choices are made.  The graphs below illustrate using a solid choice of 
+                    proportional gain, Kp=0.4 from the earlier closed loop step response, after adding Feedforward and Pole Zero compensation to the system.  </p>
+                <img class="photo" src="assets/media/.jpg" alt="graph readout showing affects of changing motor parameter Kp on the system after adding FFW and PZ comp">
+                <p class="description"> The only system difference between the image on the left and the image on the right is the value of proportional gain Kp.  If the only data to reference were the 
+                    closed loop response from earlier, the value on the right Kp = 0.4 could have seemed like a good choice.  However, the stability of the system is severley compromised as can bee seen by the 
+                    large margin of position overshoot and overcompensation.  The left trial of Kp = 0.2 was not necessarily the best proportional gain trial from the closed loop step response tests, but when coupled
+                    with Feedforward and Pole Zero compensation it remains stable, making it retrospectively the better choice.  This can be pulled graphically from the data via the RMS error value, highlighting the 
+                    importance of pulling information from the data collection that actually describe whats happening in the system.  A datapoint like the "average error" of the motor position compared to the motor 
+                    reference point might sound like useful information, but due to the nature of the system, it's not a useful number.  The motor position overshoot and undershoot/compensation to try and match the 
+                    reference position is split close to evenly, so the average cancels itself out and doesn't describe what is happening in the system.  In this case, the RMS error is the useful datapoint, because it 
+                    better accounts for the cyclical behavour of the motor position - motor reference relationship.</p>
             
             <h1 class="title">Pole Zero Cancellation:</h1>
             
-                <p class="description">  Pole Zero cancellation reduces the postion overshoot without needing to lower feedback gains.  </p>
+                <p class="description">  Pole Zero cancellation reduces the postion overshoot without needing to lower feedback gains. </p>
                 <img class="photo" src="assets/media/PZbd.jpg" alt="block diagram showing the system including Pole-zero cancellation">
                 <p class="caption">Figure 7: Reference of partial control loop with Pole Zero Compensator in red. Parameter C is the ‘zero’ that is being moved in figure 6 above.</p>    
             
@@ -58,8 +70,9 @@
                 <p class="description"> not sure yet ... ?</p>
                     
         
-        <h1 class="subtitle">Conclusion</h1>
-                <p class="description">  insert text here</p>
+        <h1 class="title">Conclusion</h1>
+                <p class="description"> Overall this project was a big push in developing my intuition for system modeling, and improved my confidence in my ability to weigh options 
+                            for system parameters and choose accordingly.  </p>
             
         
         </div>
