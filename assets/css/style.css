@@ -163,3 +163,8 @@ html {
   width: max;
   height:auto;
 }
+
+.project{
+    display: block;
+    margin left: auto;
+}
