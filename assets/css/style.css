@@ -165,6 +165,7 @@ html {
 }
 
 .project{
-    display: block;
-    margin left: auto;
+    margin: auto;
+    top 50%;
+    left 50%
 }
