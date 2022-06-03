@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang=en>
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="../assets/css/style.css"> 
+        <title> Transmitter/Receiver</title>  
+    </head>
+    <body> 
+        <nav class="navigation">
+            <ul class = "menu">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="TX_RX.html"> AM Radio </a></li>
+                <li><a href="RobotBOB.html"> Ball on Beam Robot </a></li>
+                <li><a href="misc.html"> Smaller Projects </a></li>
+            </ul>
+          </nav>
+
+
+        <div id="project">
+            <h3 class="title">AM Transmitter & Receiver </h3>
+                 <p class="description"> Design and build of Modulators, filters, and converters for AM Transmitter and Receiver at 435kHz</p>
+
+            <h1 class="title">Project Scope:</h1>
+                <p class="description"> The purpose of this project was to utilize a semesters worth of lab work in communications
+                    electronics to design a complete transmitter and receiver that utilizes AM modulation. </p>
+        </div>
+        
+        <div class="flex-container">
+                <div> <iframe width="400" height="300" src="https://yloop=1" type="video">
+                        Your browser does not support the video tag </iframe> 
+                        <p class="caption"> Playing Mario Kart in the Lab using the Tx/Rx build as the speaker</p>
+                </div>
+
+                <div> <a class="reslink" href="assets/media/RX_TX Design project.pdf" download>
+                        <img src="RX_TX Design project.pdf" alt="Compiled Lab Report">
+                        </a>
+                </div> 
+        </div>
+
+        <div>                  
+            <h1 class="title"> Designing the Transmitter:</h1>
+                <p class="description"> The first circuit designed for the Transmitter was the input Audio amplifier and a Sallen Key Low Pass filter. 
+                    following design simulation and frequency reponse testing, a local oscillator was designed and built around the frquency 435kHz  </p>
+                <img class="photo" src="assets/media/TXoscillator.jpg" alt="Circuit Schematic showing the design of the transmitter's local oscillator">
+                <p class="caption"> Figure 2: Circuit Schematic showing the design of the transmitter's local oscillator</p>
+                <p class="description"> Being limited only to on-hand lab stock meant aa additional shunt cap was needed the collector of the 3904 Transistor to bring the initial oscillating frequency
+                    down from 450kHz operating to the desired 435kHz.  The amplitude modulator was designed next, with a few additonal parts to work as a matching network for the 50Ohm lab equipment.
+                    An output filter was also added to the final stage of the Transmitter to clean up the signal.</p>
+            
+            
+            <h1 class="title">Designing the Receiver:</h1>
+            
+                <p class="description"> For the front end filter of the Receiver, a 5th order Butterworth was designed.  Similar to the Transmitter, the Receiver 
+                    needs a local oscillator and a de-modulator. A downconverter was designed to be used with selected speaker, and an IF filter and amplifier circuits were also needed 
+                    for complete operation. </p>  
+
+                <img class="photo" src="assets/media/FFTrejectionFilter.jpg" alt="screenshot of IF filter rejecting frequencies outside desired frequency">
+                <p class="caption">Figure 3: IF filter showing signal rejection outside the desired 75kHz range</p>
+            
+            <h1 class="title">Speaker Amplifier:</h1>
+            <p class="description"> While  </p>
+            <img class="photo" src="assets/media/RXspeakerAmp.jpg" alt="Image of schematic for speaker amplifier">
+            <p class="description"> A common op-amp circuit was used to amplify the audio signal.</p>
+            
+        <h1 class="title">Conclusion</h1>
+                <p class="description"> Overall this project was a fun challenge and a good way to finish the course by incorporating a lot of the covered material into one project.  </p>
+             
+        </div>    
+    </body>
+</html>
