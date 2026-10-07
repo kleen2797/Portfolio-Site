@@ -1,12 +1,12 @@
 html {
-    background-color: rgb(158, 98, 149);
+    background-color: rgb(17, 74, 68);
     
   }
 
   body{
-    background-color: gainsboro;
+    background-color: "Courier New";
     padding-bottom:50px;
-    box-shadow: 5px 5px 5px rgb(85, 20, 75);
+    box-shadow: 5px 5px 5px rgb(85, 125, 120);
     margin-right: 50px;
     margin-left: 50px;
   }
@@ -18,7 +18,7 @@ html {
   }
   
   .navigation a {
-    color: rgb(85, 20, 75);
+    color: rgb(25, 100, 90);
     font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
@@ -70,7 +70,7 @@ html {
   }
 
 .myname {
-    color:rgb(80, 16, 69);
+    color:rgb(15, 70, 60);
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -97,7 +97,7 @@ html {
 }
 
 .subtitle{
-    color:rgb(85, 20, 75);
+    color:rgb(50, 100, 95);
     font-family:  Helvetica, sans-serif;
     text-align: center; 
     margin-top: 25px;
@@ -126,7 +126,7 @@ html {
 }
 
 .reslink{
-    color: rgb(80, 16, 69);
+    color: rgb(50, 100, 95);
     font-weight: bold;
     letter-spacing: 2px;
     text-decoration: underline;
